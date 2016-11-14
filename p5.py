@@ -34,7 +34,7 @@ def NMF(V, r, max_iter=200, tolerance=1e-6, print_freq=20):
 			break
 		obj.append(d)
 	
-	return W, H, [obj[i] for i in range(len(obj)) if i % 2 == 0]
+	return W, H, obj
 
 def dist(V, U):
 	assert(V.shape == U.shape)
